@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Signup - CompanyCo</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="company-name">
+            Company Name
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a> 
+    </nav>
+
+    <main>
+        <section class="signup-form">
+            <form id="signupForm" action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <button type="submit" class="signup-btn">Sign Up</button>
+                <div id="signupMessage" class="message-box"></div>
+            </form>
+        </section>
+
+
+
+            <div id="errorBox" class="error-box">
+                <p id="usernameError" class="error"></p> <!-- Username error message -->
+                <p id="confirmPasswordError" class="error"></p> <!-- Password error message -->
+                <p id="emailError" class="error"></p> <!-- Email error message -->
+            </div>
+    
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Companyco. All rights reserved.</p>
+    </footer>
+
+    <!-- Include the JavaScript file -->
+    <script src="signup.js"></script>
+</body>
+</html>
